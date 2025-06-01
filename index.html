@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温哥华商业地产投资平台 | Vancouver Commercial Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #F5F4F0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0C2340 0%, #1A365D 100%);
+        }
+        
+        .gold-text {
+            color: #C5B190;
+        }
+        
+        .gold-border {
+            border-color: #C5B190;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #C5B190;
+            margin: 20px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 英雄区域 -->
+    <div class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+             alt="温哥华商业地产" 
+             class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">温哥华高端商业地产投资平台</h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">专注提供温哥华核心区域工业、零售、办公楼、出租公寓等高价值商业地产服务</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#properties" class="bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] font-bold py-3 px-8 rounded transition duration-300">
+                    查看精选物业
+                </a>
+                <a href="#contact" class="border-2 border-[#C5B190] hover:bg-[#C5B190]/10 text-white font-bold py-3 px-8 rounded transition duration-300">
+                    预约咨询
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 核心价值 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0C2340] mb-4">我们的核心价值</h2>
+                <div class="section-title"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-[#F5F4F0] p-8 rounded-lg text-center hover-scale card-shadow">
+                    <div class="text-[#C5B190] text-4xl mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0C2340] mb-4">精准定位</h3>
+                    <p class="text-gray-600">基于20年市场经验，精准把握温哥华各区域商业地产投资机会，为客户筛选最具增值潜力的物业</p>
+                </div>
+                
+                <div class="bg-[#F5F4F0] p-8 rounded-lg text-center hover-scale card-shadow">
+                    <div class="text-[#C5B190] text-4xl mb-6">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0C2340] mb-4">诚信透明</h3>
+                    <p class="text-gray-600">从物业评估到交易完成，全程透明操作，确保投资者清晰了解每一环节，建立长期信任关系</p>
+                </div>
+                
+                <div class="bg-[#F5F4F0] p-8 rounded-lg text-center hover-scale card-shadow">
+                    <div class="text-[#C5B190] text-4xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0C2340] mb-4">价值创造</h3>
+                    <p class="text-gray-600">通过专业资产管理服务，优化物业运营效率，提升租金收益，实现资产长期稳定增值</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务领域 -->
+    <section class="py-20 bg-[#F5F4F0]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0C2340] mb-4">专业服务领域</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">覆盖温哥华核心商业区及新兴开发区域的多元地产类型</p>
+                <div class="section-title"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 工业地产 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="工业地产" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-warehouse text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">工业地产投资</h3>
+                        <p class="text-gray-600 mb-4">现代化仓储物流中心、制造厂房及工业园区，覆盖大温哥华核心工业走廊区域，提供稳定现金流与增值潜力</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 零售商业 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="零售商业" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-shopping-bag text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">零售商业空间</h3>
+                        <p class="text-gray-600 mb-4">高端购物中心、社区商业街及核心商圈零售空间，提供稳定租金收益与长期增值潜力</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 写字楼 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="写字楼" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-building text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">A级写字楼</h3>
+                        <p class="text-gray-600 mb-4">温哥华市中心及商业核心区甲级写字楼资产，满足企业总部及专业服务机构的办公需求</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 多户住宅 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="多户住宅" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-home text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">多户住宅投资</h3>
+                        <p class="text-gray-600 mb-4">高端租赁社区、学生公寓及多户住宅资产，在温哥华住房市场提供稳定收益与资本增值</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 土地开发 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501594902352-ee8d1f585961?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="土地开发" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-map-marked text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">土地开发项目</h3>
+                        <p class="text-gray-600 mb-4">战略性开发用地资源，包括住宅开发、商业综合体及混合用途开发项目</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 购物中心 -->
+                <div class="bg-white rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="购物中心" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-6 right-6 w-12 h-12 bg-[#C5B190] rounded-full flex items-center justify-center text-[#0C2340]">
+                            <i class="fas fa-store text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0C2340] mb-3">区域购物中心</h3>
+                        <p class="text-gray-600 mb-4">核心商圈区域型购物中心投资机会，提供长期租约与通胀保护收益</p>
+                        <a href="#" class="text-[#C5B190] font-medium hover:underline flex items-center">
+                            了解更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选物业 -->
+    <section id="properties" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0C2340] mb-4">精选投资机会</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">温哥华地区高收益商业地产项目</p>
+                <div class="section-title"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 工业物业 -->
+                <div class="rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="工业物业" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-[#C5B190] text-[#0C2340] px-3 py-1 rounded-full text-sm font-bold">
+                            工业
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="text-2xl font-bold text-[#0C2340] mb-2">$12,500,000</div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt text-[#C5B190] mr-2"></i>
+                            <span>本拿比工业区，温哥华</span>
+                        </div>
+                        
+                        <div class="flex justify-between border-t border-gray-200 pt-4 mt-4">
+                            <div class="text-center">
+                                <i class="fas fa-arrows-alt text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">45,000 sq.ft.</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-door-open text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">12 Units</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-car text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">50+ Parking</div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="block mt-6 bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] font-bold py-3 px-4 rounded text-center transition duration-300">
+                            查看详情
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 出租公寓 -->
+                <div class="rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="出租公寓" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-[#C5B190] text-[#0C2340] px-3 py-1 rounded-full text-sm font-bold">
+                            出租公寓
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="text-2xl font-bold text-[#0C2340] mb-2">$8,200,000</div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt text-[#C5B190] mr-2"></i>
+                            <span>温哥华市中心，温哥华</span>
+                        </div>
+                        
+                        <div class="flex justify-between border-t border-gray-200 pt-4 mt-4">
+                            <div class="text-center">
+                                <i class="fas fa-building text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">24 Units</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-bed text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">2-3 Beds</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-swimming-pool text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">设施齐全</div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="block mt-6 bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] font-bold py-3 px-4 rounded text-center transition duration-300">
+                            查看详情
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 开发用地 -->
+                <div class="rounded-lg overflow-hidden hover-scale card-shadow">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                             alt="开发用地" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-[#C5B190] text-[#0C2340] px-3 py-1 rounded-full text-sm font-bold">
+                            开发用地
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="text-2xl font-bold text-[#0C2340] mb-2">$5,750,000</div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt text-[#C5B190] mr-2"></i>
+                            <span>列治文黄金地段，温哥华</span>
+                        </div>
+                        
+                        <div class="flex justify-between border-t border-gray-200 pt-4 mt-4">
+                            <div class="text-center">
+                                <i class="fas fa-arrows-alt text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">1.2 Acres</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-building text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">混合用途</div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-map-marked text-[#C5B190] text-xl mb-1"></i>
+                                <div class="text-sm text-gray-600">核心位置</div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="block mt-6 bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] font-bold py-3 px-4 rounded text-center transition duration-300">
+                            查看详情
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-[#0C2340] hover:bg-[#0C2340] text-[#0C2340] hover:text-white font-bold py-3 px-8 rounded transition duration-300">
+                    查看更多物业
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">关于我们</h2>
+                <p class="text-xl text-[#C5B190] max-w-3xl mx-auto">深耕温哥华商业地产市场二十年的专业团队</p>
+                <div class="section-title"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                         alt="关于我们" 
+                         class="rounded-lg w-full h-auto shadow-xl">
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">专业创造价值，诚信铸就未来</h3>
+                    <p class="mb-4">我们是一家专注于温哥华地区商业地产投资、开发和管理服务的专业机构。团队由资深地产专家、市场分析师和法律顾问组成，拥有超过二十年的本地市场经验。</p>
+                    <p class="mb-8">凭借对中国投资者需求的深入理解和跨文化沟通能力，我们为来自中国大陆的投资者提供专业的市场分析、物业评估和投资策略。我们的服务涵盖工业、零售、办公楼、出租公寓、开发用地及购物中心等全品类商业地产。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/10">
+                            <div class="text-3xl font-bold gold-text mb-2">20+</div>
+                            <div class="text-gray-300">年行业经验</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/10">
+                            <div class="text-3xl font-bold gold-text mb-2">$1.2B+</div>
+                            <div class="text-gray-300">交易总额</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/10">
+                            <div class="text-3xl font-bold gold-text mb-2">500+</div>
+                            <div class="text-gray-300">满意客户</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/10">
+                            <div class="text-3xl font-bold gold-text mb-2">50+</div>
+                            <div class="text-gray-300">专业团队</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0C2340] mb-4">联系我们</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">我们的专业顾问将为您提供一对一咨询服务</p>
+                <div class="section-title"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-[#F5F4F0] p-8 rounded-lg card-shadow">
+                        <h3 class="text-2xl font-bold text-[#0C2340] mb-6">联系方式</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-[#C5B190] text-[#0C2340] p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#0C2340] mb-1">办公地址</h4>
+                                    <p class="text-gray-600">温哥华市中心西乔治亚街1200号，BC省V6E 4A8</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#C5B190] text-[#0C2340] p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#0C2340] mb-1">联系电话</h4>
+                                    <p class="text-gray-600">+1 (604) 123-4567</p>
+                                    <p class="text-gray-600">+1 (778) 890-1234 (中文服务)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#C5B190] text-[#0C2340] p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#0C2340] mb-1">电子邮件</h4>
+                                    <p class="text-gray-600">info@vancommercial.com</p>
+                                    <p class="text-gray-600">china@vancommercial.com (中文服务)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#C5B190] text-[#0C2340] p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#0C2340] mb-1">营业时间</h4>
+                                    <p class="text-gray-600">周一至周五: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">周六: 10:00 AM - 4:00 PM (需预约)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-[#F5F4F0] p-8 rounded-lg card-shadow">
+                        <h3 class="text-2xl font-bold text-[#0C2340] mb-6">咨询表单</h3>
+                        
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-[#0C2340] font-medium mb-2">姓名</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C5B190] focus:border-transparent">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-[#0C2340] font-medium mb-2">电子邮箱</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C5B190] focus:border-transparent">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-[#0C2340] font-medium mb-2">联系电话</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C5B190] focus:border-transparent">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="interest" class="block text-[#0C2340] font-medium mb-2">感兴趣领域</label>
+                                <select id="interest" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C5B190] focus:border-transparent">
+                                    <option value="">请选择...</option>
+                                    <option value="industrial">工业地产</option>
+                                    <option value="retail">零售商业</option>
+                                    <option value="office">写字楼</option>
+                                    <option value="residential">多户住宅</option>
+                                    <option value="land">开发用地</option>
+                                    <option value="mall">购物中心</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-[#0C2340] font-medium mb-2">咨询内容</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C5B190] focus:border-transparent"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] font-bold py-4 px-6 rounded transition duration-300">
+                                提交咨询
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-[#0C2340] text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 gold-text">VANCommercial</h3>
+                    <p class="mb-4 text-gray-400">温哥华领先的商业地产投资服务平台，专注于为全球投资者提供高品质的加拿大商业地产投资机会。</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">
+                            <i class="fab fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6 gold-border border-b pb-2">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">首页</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#C5B190] transition duration-300">服务领域</a></li>
+                        <li><a href="#properties" class="text-gray-400 hover:text-[#C5B190] transition duration-300">精选物业</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-[#C5B190] transition duration-300">关于我们</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[#C5B190] transition duration-300">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6 gold-border border-b pb-2">服务项目</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">工业地产</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">零售商业</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">写字楼</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">多户住宅</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#C5B190] transition duration-300">土地开发</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6 gold-border border-b pb-2">订阅资讯</h3>
+                    <p class="mb-4 text-gray-400">订阅我们的电子通讯，获取最新的商业地产投资机会和市场分析报告。</p>
+                    <form class="flex">
+                        <input type="email" placeholder="您的邮箱" class="px-4 py-2 rounded-l focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-[#C5B190] hover:bg-[#D4C19F] text-[#0C2340] px-4 py-2 rounded-r transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 VANCommercial. 保留所有权利。</p>
+                <p class="mt-2">网页由问小白生成，仅供参考；最后更新时间为2025-06-01 ，星期日；<a href="https://wenxiaobai.com" class="text-[#C5B190] hover:underline">wenxiaobai.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // 移动端菜单切换
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
